@@ -29,7 +29,7 @@ public:
         {mDuration = std::chrono::duration_cast<Duration>(std::forward<T>(t));}
 
     template<class Duration = std::chrono::seconds>
-    constexpr typename Duration::rep count()
+    constexpr typename Duration::rep count() const
         {return std::chrono::duration_cast<Duration>(mDuration).count();}
 
 private:
