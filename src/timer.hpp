@@ -3,6 +3,9 @@
 
 #include <chrono>
 
+namespace TIMER
+{
+
 template<class C = std::chrono::high_resolution_clock>
 class Timer
 {
@@ -36,5 +39,7 @@ private:
     std::chrono::time_point<Clock> mPoint;
     Duration mDuration;
 };
+
+}
 
 #endif

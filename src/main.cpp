@@ -6,8 +6,8 @@
 
 int main(int argc, char **argv)
 {
-    Timer<> timer; // default(high resolution clock) timer
-    Timer<std::chrono::system_clock> systemTimer; // system clock timer
+    TIMER::Timer<> timer; // default(high resolution clock) timer
+    TIMER::Timer<std::chrono::system_clock> systemTimer; // system clock timer
 
     timer.start();
     sleep(1);
