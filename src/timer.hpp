@@ -34,6 +34,9 @@ public:
     template<class Duration = std::chrono::seconds>
     constexpr typename Duration::rep count() const
         {return std::chrono::duration_cast<Duration>(mDuration).count();}
+    
+    constexpr const Duration &duration() const noexcept
+        {return mDuration;}
 
 private:
     std::chrono::time_point<Clock> mPoint;

@@ -25,5 +25,8 @@ int main(int argc, char **argv)
     timer.set(std::chrono::microseconds(10000000));
     std::cout << "set(1000000microseconds): " << timer.count() << std::endl;
 
+    // c++20
+    // std::cout << timer.duration() << std::endl;
+
     return 0;
 }
