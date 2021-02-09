@@ -3,7 +3,7 @@
 
 #include <chrono>
 
-namespace TIMER
+inline namespace TIMER
 {
 
 template<class C = std::chrono::high_resolution_clock>
